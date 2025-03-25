@@ -1,12 +1,12 @@
 export default {
     title: '码路芽子', // 博客的标题
-    description: 'mlyz 的个人博客', // 博客的介绍
+    description: 'tlw 的个人博客', // 博客的介绍
     base: '/blog/', // 如果想用 https://mlyz.wdy.github.io/blog/ 访问，那么这句话必填
     themeConfig: {
         logo: "/images/logo.png", // 页面上显示的logo
         nav: [ // 页面右上角的导航
-            { text: "vue", link: "/articles/vue/上传素材到COS" },
-            { text: "uniapp", link: "/articles/uniapp/一键登录" },
+            { text: "基础知识", link: "/articles/vue/上传素材到COS" },
+            { text: "技术博客", link: "/articles/uniapp/一键登录" },
             {
                 text: '博客文档',
                 items: [ // 可以配置成下拉
@@ -17,7 +17,7 @@ export default {
             }
         ],
         sidebar: { // 侧边栏，可以分组
-            "/articles/vue/": [
+            "/": [
                 {
                     text: "基础",
                     items: [
@@ -57,43 +57,49 @@ export default {
                 {
                     text: "基础",
                     items: [
-                    {
-                        text: "1. 构造函数、原型、原型链",
-                        link: "/articles/javaScript-core/构造函数、原型、原型链",
-                    },
-                    {
-                        text: "2. 执行上下文和执行上下文栈",
-                        link: "/articles/javaScript-core/执行上下文和执行上下文栈",
-                    },
-                    {
-                        text: "3. this的指向",
-                        link: "/articles/javaScript-core/this的指向",
-                    },
+                        {
+                            text: "1. 构造函数、原型、原型链",
+                            link: "/articles/javaScript-core/构造函数、原型、原型链",
+                        },
+                        {
+                            text: "2. 执行上下文和执行上下文栈",
+                            link: "/articles/javaScript-core/执行上下文和执行上下文栈",
+                        },
+                        {
+                            text: "3. this的指向",
+                            link: "/articles/javaScript-core/this的指向",
+                        },
                     ],
                 },
                 {
                     text: "进阶",
                     items: [
-                    {
-                        text: "xx",
-                        link: "/xx",
-                    },
+                        {
+                            text: "xx",
+                            link: "/xx",
+                        },
                     ],
                 },
             ],
             "/articles/libs/": [
                 {
                     items: [
-                    {
-                        text: "1. VForm3低代码初体验",
-                        link: "/articles/libs/VForm3低代码初体验",
-                    },
+                        {
+                            text: "1. VForm3低代码初体验",
+                            link: "/articles/libs/VForm3低代码初体验",
+                        },
                     ],
                 }
             ],
         },
-        socialLinks: [{ icon: "github", link: "https://github.com/mlyz-wdy" }], // 可以连接到 github
+        socialLinks: [{ icon: "github", link: "https://github.com/tianluwei" }], // 可以连接到 github
     },
+    head: [
+        [
+            'link', { rel: 'icon', href: '/icon.png' }
+        ],
+        ['script', { id: 'abcscript' }, `console.log(1001)`]
+    ]
 }
 
 
